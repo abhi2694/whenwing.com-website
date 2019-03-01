@@ -1,14 +1,4 @@
-/* =================================
-------------------------------------
-  Divisima | eCommerce Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
 
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 html,
 body {
@@ -781,8 +771,8 @@ ol {
 ------------------------*/
 
 .top-letest-product-section {
-	padding-top: 70px;
-	padding-bottom: 60px;
+	padding-top: 40px;
+	padding-bottom: 0px;
 }
 
 .top-letest-product-section .section-title {
