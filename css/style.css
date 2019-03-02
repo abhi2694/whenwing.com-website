@@ -91,8 +91,8 @@ ol {
 }
 
 .spad {
-	padding-top: 105px;
-	padding-bottom: 105px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .text-white h1,
@@ -771,12 +771,12 @@ ol {
 ------------------------*/
 
 .top-letest-product-section {
-	padding-top: 40px;
+	padding-top: 30px;
 	padding-bottom: 0px;
 }
 
 .top-letest-product-section .section-title {
-	margin-bottom: 70px;
+	margin-bottom: 20px;
 }
 
 .product-slider .owl-nav {
@@ -1193,7 +1193,7 @@ ol {
 
 .page-top-info {
 	background: #f8f7f7;
-	padding: 60px 0 70px;
+	padding: 20px 0 20px;
 }
 
 .page-top-info h4 {
