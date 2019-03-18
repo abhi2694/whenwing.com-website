@@ -1,0 +1,13 @@
+<% include ./partials/cheader %>
+    <h2 class="text-center">USER PROFILE</h2>
+    <br>
+    <br>
+    <div class="ml-3 ml-3 ml-3 text-center align-items-center" style="background-color:E2DFDF;">
+        <table>
+            <tr class="text-center"><td><h6>USERNAME</h6>       </td><td><h3><%=currentUser.username%></h3></td></tr>
+            <tr class="text-center"><td><h6>NAME</h6>            </td><td><h3><%=currentUser.name%></h3></td></tr>
+            <tr class="text-center"><td><h6>EMAIL</h6>            </td><td><h3><%=currentUser.email%></h3></td></tr>
+            <tr class="text-center"><td><h6>MOBILE</h6>           </td><td><h3><%=currentUser.mobile%></h3></td></tr>
+        </table>
+    </div>
+<% include ./partials/footer %>

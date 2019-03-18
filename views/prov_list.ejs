@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Provider List</title>
+</head>
+<body>
+    <h1>List of all providers</h1>
+    <h2>Number of records : <%=number%></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>prov_id</th>
+                <th>prov_name</th>
+                <th>profession</th>
+                <th>speciality</th>
+                <th>price</th>
+                <th>contact</th>
+                <th>age</th>
+                <th>addr</th>
+                <th>workexp</th>
+                <th>prov_record</th>
+                <th>about</th>
+                <th>reg_date</th>
+                <th>photo_id</th>
+                <th>prov_active_status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (var i = 0; i < prov_list.length; i++) { %>
+                <tr>
+                    <td><%=prov_list[i].prov_id%></td>
+                    <td><%=prov_list[i].prov_name%></td>
+                    <td><%=prov_list[i].profession%></td>
+                    <td><%=prov_list[i].speciality%></td>
+                    <td><%=prov_list[i].price%></td>
+                    <td><%=prov_list[i].contact%></td>
+                    <td><%=prov_list[i].age%></td>
+                    <td><%=prov_list[i].addr%></td>
+                    <td><%=prov_list[i].workexp%></td>
+                    <td><%=prov_list[i].prov_record%></td>
+                    <td><%=prov_list[i].about%></td>
+                    <td><%=prov_list[i].reg_date%></td>
+                    <td><%=prov_list[i].photo_id%></td>
+                    <td><%=prov_list[i].prov_active_status%></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+</body>
+</html>

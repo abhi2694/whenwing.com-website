@@ -1,0 +1,60 @@
+<% include ./partials/cheader %>
+<br/>
+    <h4 class ="ml-2">List of Providers:</h4>
+    <% for (var i = 0; i < (prov_list.length)/3; i=i+3) { %>
+    <div class="row">
+        <div class ="col-lg-4 col-md-6 col-sm-12 text-center p-2 pl-5 pt-5">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+     <h5 class="card-title"><%=prov_list[i].prov_id%>&nbsp;<td><%=prov_list[i].prov_name%></td></h5>
+    <p class="card-text">Price: <%=prov_list[i].price%></p>
+    <p class="card-text">Contact: <%=prov_list[i].contact%></p>
+    <p class="card-text">Age: <%=prov_list[i].age%></p>
+    <p class="card-text">Address: <%=prov_list[i].addr%></p>
+    <p class="card-text">Work Experience: <%=prov_list[i].workexp%></p>
+    <p class="card-text">Record: <%=prov_list[i].prov_record%></p>
+    <p class="card-text">About: <%=prov_list[i].about%></p>
+    <a href="/orders/place/<%=prov_list[i].prov_id%>" class="btn btn-dark">BOOK NOW</a>
+    </div>
+    </div>
+    </div>
+    <% i++ %> 
+    <% if (i < prov_list.length) { %>
+        <div class ="col-lg-4 col-md-6 col-sm-12 text-center p-2 pl-5 pt-5">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+     <h5 class="card-title"><%=prov_list[i].prov_id%>&nbsp;<td><%=prov_list[i].prov_name%></td></h5>
+    <p class="card-text">Price: <%=prov_list[i].price%></p>
+    <p class="card-text">Contact: <%=prov_list[i].contact%></p>
+    <p class="card-text">Age: <%=prov_list[i].age%></p>
+    <p class="card-text">Address: <%=prov_list[i].addr%></p>
+    <p class="card-text">Work Experience: <%=prov_list[i].workexp%></p>
+    <p class="card-text">Record: <%=prov_list[i].prov_record%></p>
+    <p class="card-text">About: <%=prov_list[i].about%></p>
+    <a href="/orders/place/<%=prov_list[i].prov_id%>" class="btn btn-dark">BOOK NOW</a>
+    </div>
+    </div>
+    </div>
+    <% } %> 
+    <% i++ %> 
+    <% if (i < prov_list.length) { %>
+        <div class ="col-lg-4 col-md-6 col-sm-12 text-center p-2 pl-5 pt-5">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+     <h5 class="card-title"><%=prov_list[i].prov_id%>&nbsp;<td><%=prov_list[i].prov_name%></td></h5>
+    <p class="card-text">Price: <%=prov_list[i].price%></p>
+    <p class="card-text">Contact: <%=prov_list[i].contact%></p>
+    <p class="card-text">Age: <%=prov_list[i].age%></p>
+    <p class="card-text">Address: <%=prov_list[i].addr%></p>
+    <p class="card-text">Work Experience: <%=prov_list[i].workexp%></p>
+    <p class="card-text">Record: <%=prov_list[i].prov_record%></p>
+    <p class="card-text">About: <%=prov_list[i].about%></p>
+    <a href="/orders/place/<%=prov_list[i].prov_id%>" class="btn btn-dark">BOOK NOW</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <% } %> 
+    <% } %>
+</div>
+    <% include ./partials/footer %>

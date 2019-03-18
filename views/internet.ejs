@@ -1,0 +1,87 @@
+<% include ./partials/cheader %>
+<!-- Category section -->
+<section class="category-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 order-2 order-lg-1">
+                
+                <div class="filter-widget mb-0">
+                    <h2 class="fw-title">refine by</h2>
+                    <div class="price-range-wrap">
+                        <h4>Price</h4>
+                        <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="0" data-max="50000">
+                            <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
+                            </span>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;">
+                            </span>
+                        </div>
+                        <div class="range-slider">
+                            <div class="price-input">
+                                <input type="text" id="minamount">
+                                <input type="text" id="maxamount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-9  order-1 order-lg-2 mb-5 mb-lg-0">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <form id="formoid" method="post">
+                            <div class="form-group">
+                                <select class="form-control item" name="course" placeholder="Type of Service">
+                                    <option value="btech">Select service</option>
+                                    <option value="btech">Broadband</option>
+                                    <option value="barch">Datacard</option>
+                                    <option value="barch">Wifi</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <form id="formoid" method="post">
+                            <div class="form-group">
+                                <select class="form-control item" name="course" placeholder="Type of AC">
+                                    <option value="btech">Select internet provider</option>
+                                    <option value="btech">Hathway</option>
+                                    <option value="barch">Airtel</option>
+                                    <option value="barch">Tikano</option>
+                                    <option value="barch">Reliance</option>
+                                    <option value="barch">ACT</option>
+                                    <option value="barch">Vodafone</option>
+                                    <option value="barch">You</option>
+                                    <option value="barch">Tata</option>
+                                    <option value="barch">Den Networks</option>
+                                    <option value="barch">Idea</option>
+                                    <option value="barch">MTS</option>
+                                    <option value="barch">Netcom</option>
+                                    <option value="barch">GTPL</option>
+                                    <option value="barch">Excell</option>
+                                    <option value="barch">I-On</option>
+                                    <option value="barch">GBPS</option>
+                                    <option value="barch">Aircel</option>
+                                    <option value="barch">Cherrinet</option>
+                                    <option value="barch">Spearhead Live</option>
+                                    <option value="barch">BSNL</option>
+                                    <option value="barch">Tata</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <form id="formoid" method="post">
+                            <div class="form-group">
+                                <button class="btn btn-dark btn-block create-account" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Category section end -->
+<% include ./partials/footer %>

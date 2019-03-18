@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Become a Provider</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="/fonts3/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/css/style3.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" action = '/add' enctype = "multipart/form-data">
+                        <h2 class="form-title">Become a Provider</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="prov_name" id="name" placeholder="Full Name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="price" id="password" placeholder="Price"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="prov_name" id="name" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" name="profession" placeholder="Profession">
+								<option value="btech">Select your profession</option>
+								<option value="Carpenter">Carpenter</option>
+								<option value="AC Repair">AC Repair</option>
+								<option value="Architect">Architect</option>
+							
+							</select>
+                        </div>
+						<div class="form-group">
+                            <select class="form-input" name="speciality" placeholder="Speciality">
+								<option value="btech">Select your speciality</option>
+								<option value="repair">Repair</option>
+								<option value="install">install</option>
+								
+							
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="price" id="password" placeholder="Price"/>
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-input" name="age" id="password" placeholder="Age"/>
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-input" name="addr" id="name" placeholder="Address"/>
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-input" name="contact" id="password" placeholder="Contact"/>
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-input" name="workexp" id="password" placeholder="Work experience in years"/>
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-input" name="prov_record" id="name" placeholder="Record"/>
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-input" name="about" id="name" placeholder="About"/>
+                        </div>
+						<div class="form-group form-input">
+						<label for ='file'>Upload Photo &nbsp;</label>
+                            <input type="file" name="file" id="name" placeholder="Upload Photo"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="/vendor3/jquery/jquery.min.js"></script>
+    <script src="/js/main3.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

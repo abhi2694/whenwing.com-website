@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>WhenWing</title>
+	<meta charset="UTF-8">
+	<meta name="description" content=" Divisima | eCommerce Template">
+	<meta name="keywords" content="divisima, eCommerce, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="/css/flaticon.css"/>
+	<link rel="stylesheet" href="/css/slicknav.min.css"/>
+	<link rel="stylesheet" href="/css/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="/css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="/css/animate.css"/>
+	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="/css/linearicons.css">
+	
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<% if (currentUser) { %>
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-1 text-center text-lg-left">
+						<!-- logo -->
+						<a href="/" class="site-logo">
+							<h5>Whenwing</h5>
+						</a>
+					</div>
+						<div class="col-lg-1 text-center text-lg-left">
+						<!-- logo -->
+							<button type="button" class="btn btn-light"><%= city %></button>
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-3">
+						<form class="header-search-form">
+							<input type="text" placeholder="Search for services in <%= city %>">
+							<button><i class="flaticon-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-6 col-lg-5">
+						<div class="user-panel">
+							<div class="up-item">
+								
+								<a href="/profile"><i class="flaticon-profile"></i><%= currentUser.username %></a>
+								
+							</div>
+							<div class="up-item">
+								<div class="shopping-card">
+									<i class="flaticon-bag"></i>
+								</div>
+								<a href="./orders">Shopping Cart &nbsp;&nbsp;</a>
+							</div>
+							
+							<div class="up-item">
+							
+			<form method = "GET" action = "/logout"><button class="btn btn-dark" type = "submit">Logout</button></form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+				<ul class="main-menu">
+					<li><a href="#">Home Services</a>
+						<ul class="sub-menu">
+							<li><a href="/home-services/carpenter">Carpenter</a></li>
+							<li><a href="/home-services/painter">Painter</a></li>
+							<li><a href="/home-services/plumber">Plumber</a></li>
+							<li><a href="/home-services/electrician">Electrician</a></li>
+							<li><a href="/home-services/glassmirror">Glass and Mirror</a></li>
+							<li><a href="/home-services/architect">Architect</a></li>
+							<li><a href="/home-services/builder">Builder</a></li>
+							<li><a href="/home-services/interiordesigner">Interior Designer</a></li>
+							<li><a href="/home-services/internet">Internet Provider</a></li>
+							<li><a href="#">Laundry</a></li>
+							<li><a href="#">Pundit/Pooja</a></li>
+							<li><a href="#">Photographer</a></li>
+							<li><a href="#">Web Developer</a></li>
+							<li><a href="#">Concrete Provider</a></li>
+							<li><a href="#">CCTV Camera</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Appliance Repair</a>
+						<ul class="sub-menu">
+							<li><a href="/appliance-repair/acrepair">AC Service</a></li>
+							<li><a href="/appliance-repair/refrepair">Refrigerator Repair</a></li>
+							<li><a href="/appliance-repair/rorepair">RO Repair</a></li>
+							<li><a href="/appliance-repair/microrepair">Microwave Repair</a></li>
+							<li><a href="/appliance-repair/tvrepair">TV Repair</a></li>
+							<li><a href="/appliance-repair/geyserrepair">Geyser Repair</a></li>
+							<li><a href="/appliance-repair/comprepair">Computer Repair</a></li>
+							<li><a href="/appliance-repair/mobrepair">Mobile Repair</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Transport</a>
+						<ul class="sub-menu">
+							<li><a href="#">Transport Services</a></li>
+							<li><a href="#">Travel</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Personal Service</a>
+						<ul class="sub-menu">
+							<li><a href="#">Cook</a></li>
+							<li><a href="#">Driver</a></li>
+							<li><a href="#">Yoga Trainer</a></li>
+							<li><a href="#">Dietician</a></li>
+							<li><a href="#">Naukar</a></li>
+							<li><a href="#">Security Guard</a></li>
+							<li><a href="#">Dancer</a></li>
+							<li><a href="#">Gardener</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Showroom</a>
+						<ul class="sub-menu">
+							<li><a href="#">Car Showroom</a></li>
+							<li><a href="#">Bike Showroom</a></li>
+							<li><a href="#">Scooty Showroom</a></li>
+							<li><a href="#">Clothes</a></li>
+							<li><a href="#">Watch</a></li>
+							<li><a href="#">Mobile</a></li>
+							<li><a href="#">Electronics</a></li>
+							<li><a href="#">AC and Cooler</a></li>
+							<li><a href="#">Furniture</a></li>
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">Jewellery</a></li>
+							<li><a href="#">Bag and Suitcase</a></li>
+							<li><a href="#">Gifts</a></li>
+							<li><a href="#">Footwear</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Education</a>
+						<ul class="sub-menu">
+							<li><a href="./product.html">Product Page</a></li>
+							<li><a href="./category.html">Category Page</a></li>
+							<li><a href="./cart.html">Cart Page</a></li>
+							<li><a href="./checkout.html">Checkout Page</a></li>
+							<li><a href="./contact.html">Contact Page</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Wedding/Party</a>
+						<ul class="sub-menu">
+							<li><a href="./product.html">DJ</a></li>
+							<li><a href="./category.html">Wedding Planner</a></li>
+							<li><a href="./cart.html">Party Planner</a></li>
+							<li><a href="./checkout.html">Event Photographer</a></li>
+							<li><a href="./contact.html">Bridal Makeup Artist</a></li>
+							<li><a href="./contact.html">Party Caterers</a></li>
+							<li><a href="./contact.html">Wedding Caterers</a></li>
+							<li><a href="./contact.html">Wedding Florist</a></li>
+							<li><a href="./contact.html">Farmhouse</a></li>
+							<li><a href="./contact.html">Halwai</a></li>
+							<li><a href="./contact.html">Tent and Decorators</a></li>
+							<li><a href="./contact.html">Mehandi Artist</a></li>
+							<li><a href="./contact.html">Band</a></li>
+							<li><a href="./contact.html">Ghori and Baggi</a></li>
+							<li><a href="./contact.html">Light Set</a></li>
+							<li><a href="./contact.html">Waiter Services</a></li>
+							<li><a href="./contact.html">Video Cameraman</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<% } else { %>
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-1 text-center text-lg-left">
+						<!-- logo -->
+						<a href="/" class="site-logo">
+							<h5>Whenwing</h5>
+						</a>
+					</div>
+					<div class="col-lg-1 text-center text-lg-left">
+						<div class="user-panel">
+						<!-- logo --><div class="up-item">
+							<button type="button" class="btn btn-light"><%= city %></button>
+						</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-3">
+						<form class="header-search-form">
+							<input type="text" placeholder="Search for services in <%= city %>">
+							<button><i class="flaticon-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-6 col-lg-6">
+						<div class="user-panel">
+							<div class="up-item">
+								<i class="flaticon-profile"></i>
+								<a href="/login">Sign In</a> or <a href="/signup">Sign Up</a>
+								
+							</div>
+							<div class="up-item">
+								<i class="flaticon-profile"></i>
+								<a href="/add">Become a Provider</a>
+								&nbsp;&nbsp;
+							</div>
+							<div class="up-item">
+								<div class="shopping-card">
+									<i class="flaticon-bag"></i>
+								</div>
+								<a href="/orders">Shopping Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+				<ul class="main-menu">
+					<li><a href="#">Home Services</a>
+						<ul class="sub-menu">
+							<li><a href="/home-services/carpenter">Carpenter</a></li>
+							<li><a href="/home-services/painter">Painter</a></li>
+							<li><a href="/home-services/plumber">Plumber</a></li>
+							<li><a href="/home-services/electrician">Electrician</a></li>
+							<li><a href="/home-services/glassmirror">Glass and Mirror</a></li>
+							<li><a href="/home-services/architect">Architect</a></li>
+							<li><a href="/home-services/builder">Builder</a></li>
+							<li><a href="/home-services/interiordesigner">Interior Designer</a></li>
+							<li><a href="/home-services/internet">Internet Provider</a></li>
+							<li><a href="#">Laundry</a></li>
+							<li><a href="#">Pundit/Pooja</a></li>
+							<li><a href="#">Photographer</a></li>
+							<li><a href="#">Web Developer</a></li>
+							<li><a href="#">Concrete Provider</a></li>
+							<li><a href="#">CCTV Camera</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Appliance Repair</a>
+						<ul class="sub-menu">
+							<li><a href="/appliance-repair/acrepair">AC Service</a></li>
+							<li><a href="/appliance-repair/refrepair">Refrigerator Repair</a></li>
+							<li><a href="/appliance-repair/rorepair">RO Repair</a></li>
+							<li><a href="/appliance-repair/microrepair">Microwave Repair</a></li>
+							<li><a href="/appliance-repair/tvrepair">TV Repair</a></li>
+							<li><a href="/appliance-repair/geyserrepair">Geyser Repair</a></li>
+							<li><a href="/appliance-repair/comprepair">Computer Repair</a></li>
+							<li><a href="/appliance-repair/mobrepair">Mobile Repair</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Transport</a>
+						<ul class="sub-menu">
+							<li><a href="#">Transport Services</a></li>
+							<li><a href="#">Travel</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Personal Service</a>
+						<ul class="sub-menu">
+							<li><a href="#">Cook</a></li>
+							<li><a href="#">Driver</a></li>
+							<li><a href="#">Yoga Trainer</a></li>
+							<li><a href="#">Dietician</a></li>
+							<li><a href="#">Naukar</a></li>
+							<li><a href="#">Security Guard</a></li>
+							<li><a href="#">Dancer</a></li>
+							<li><a href="#">Gardener</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Showroom</a>
+						<ul class="sub-menu">
+							<li><a href="#">Car Showroom</a></li>
+							<li><a href="#">Bike Showroom</a></li>
+							<li><a href="#">Scooty Showroom</a></li>
+							<li><a href="#">Clothes</a></li>
+							<li><a href="#">Watch</a></li>
+							<li><a href="#">Mobile</a></li>
+							<li><a href="#">Electronics</a></li>
+							<li><a href="#">AC and Cooler</a></li>
+							<li><a href="#">Furniture</a></li>
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">Jewellery</a></li>
+							<li><a href="#">Bag and Suitcase</a></li>
+							<li><a href="#">Gifts</a></li>
+							<li><a href="#">Footwear</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Education</a>
+						<ul class="sub-menu">
+							<li><a href="./product.html">Product Page</a></li>
+							<li><a href="./category.html">Category Page</a></li>
+							<li><a href="./cart.html">Cart Page</a></li>
+							<li><a href="./checkout.html">Checkout Page</a></li>
+							<li><a href="./contact.html">Contact Page</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Wedding/Party</a>
+						<ul class="sub-menu">
+							<li><a href="./product.html">DJ</a></li>
+							<li><a href="./category.html">Wedding Planner</a></li>
+							<li><a href="./cart.html">Party Planner</a></li>
+							<li><a href="./checkout.html">Event Photographer</a></li>
+							<li><a href="./contact.html">Bridal Makeup Artist</a></li>
+							<li><a href="./contact.html">Party Caterers</a></li>
+							<li><a href="./contact.html">Wedding Caterers</a></li>
+							<li><a href="./contact.html">Wedding Florist</a></li>
+							<li><a href="./contact.html">Farmhouse</a></li>
+							<li><a href="./contact.html">Halwai</a></li>
+							<li><a href="./contact.html">Tent and Decorators</a></li>
+							<li><a href="./contact.html">Mehandi Artist</a></li>
+							<li><a href="./contact.html">Band</a></li>
+							<li><a href="./contact.html">Ghori and Baggi</a></li>
+							<li><a href="./contact.html">Light Set</a></li>
+							<li><a href="./contact.html">Waiter Services</a></li>
+							<li><a href="./contact.html">Video Cameraman</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<% } %>
+	<!-- Header section end -->

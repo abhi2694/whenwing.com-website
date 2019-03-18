@@ -1,0 +1,57 @@
+<% include ./partials/cheader %>
+<!-- cart section end -->
+	<section class="cart-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="cart-table">
+						<h3>Your Cart</h3>
+						<div class="cart-table-warp">
+							<table>
+							<thead>
+								<tr>
+									<th class="product-th">Order ID</th>
+									<th class="quy-th">Provider ID</th>
+									<th class="size-th">Date</th>
+									<th class="size-th">Category</th>
+									<th class="size-th">Sub Category</th>
+									<th class="total-th">Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<% for (var i = 0; i < orders.length; i++) { %>
+								<tr>								
+									<td class="size-col"><h4><%=orders[i].order_id%></h4></td>
+									<td class="size-col"><h4><%=orders[i].prov_id%></h4></td>
+									<td class="size-col"><h4><%=new Date(orders[i].order_date).toLocaleString()%></h4></td>
+									<td class="size-col"><h4><%=orders[i].profession%></h4></td>
+									<td class="size-col"><h4><%=orders[i].speciality%></h4></td>
+									<td class="total-col"><h4><%=orders[i].price%></h4></td>
+								</tr>
+								<% } %>
+							</tbody>
+						</table>
+						</div>
+						<% var c=0;
+						for (var i = 0; i < orders.length; i++) { 
+							
+							c = c + orders[i].price;} %>
+						
+						<div class="total-cost">
+							<h6>Total <span><%= c %></span></h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 card-right">
+					<form class="promo-code-form">
+						<input type="text" placeholder="Enter promo code">
+						<button>Submit</button>
+					</form>
+					<a href="./checkout.html" class="site-btn">Proceed to checkout</a>
+					<a href="" class="site-btn sb-dark">Continue shopping</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- cart section end -->
+<% include ./partials/footer %>
